@@ -17,6 +17,6 @@ ActiveRecord::Schema.define(version: 2023_03_25_020539) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
+  endgit 
 
 end
