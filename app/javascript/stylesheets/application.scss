@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/bootstrap";
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(249, 249, 250);
+    margin-bottom: .3em;
+  }
+  
+  table {
+    font-size: 1em;
+    margin: .3em;
+    width: 290px;
+  }
+  
+  th {
+    padding: .2em;
+  }
+  
+  td {
+    padding-left: .5em;
+    padding-right: .5em;
+    border: 1px solid #900;
+    background-color: #ffc;
+  }
+  
+  #trHeader {
+    text-decoration: underline;
+    color: #900;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .centerCell {
+    text-align: center;
+  }
