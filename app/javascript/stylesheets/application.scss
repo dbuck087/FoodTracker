@@ -1,63 +1,59 @@
 @import "~bootstrap/scss/bootstrap";
 
-// Source mixin
-@mixin make-container1() {
-  width: 100%;
-  padding: 5px;
-  margin-right: auto;
+* html{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d6efd ;
+}
+html{
+  background-color: #6c757d;
+}
+
+
+table {
+  
+  font-size: 1em;
+  margin: .3em;
+  width: 290px;
+  width: auto;
+}
+
+th {
+  
+  font-size: larger;
+  padding: .2em;
+}
+
+td {
+  
+  padding-left: .5em;
+  padding-right: .5em;
+  border: 2px solid #0d6efd;
+  background-color: rgb(204, 230, 245);
+}
+
+#trHeader {
+  
+  text-decoration: underline;
+  color: #900;
+}
+
+.center {
   margin-left: auto;
+  margin-right: auto;
+}
+
+.centerCell {
   text-align: center;
-  background: rgb(53, 40, 241);
-}
-// Usage
-.custom-container1 {
-  @include make-container1();
 }
 
-// Source mixin
-@mixin make-container2() {
-  width: 100%;
-  padding: 5px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: justify;
-  background: rgb(203, 202, 206);
-}
-// Usage
-.custom-container2 {
-  @include make-container2();
+.container-fluid {
+
+  background-color: #0d6efd
+
 }
 
+.field label{
+  font-size: larger;
+  font-weight: bold;
+}
 
-  
-  table {
-    font-size: 1em;
-    margin: .3em;
-    width: 290px;
-  }
-  
-  th {
-    font-size: 2em;
-    padding: .2em;
-  }
-  
-  td {
-    padding-left: .5em;
-    padding-right: .5em;
-    border: 2px solid rgb(53, 40, 241);
-    background-color: rgb(204, 230, 245);
-  }
-  
-  #trHeader {
-    text-decoration: underline;
-    color: #900;
-  }
-
-  .center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .centerCell {
-    text-align: center;
-  }

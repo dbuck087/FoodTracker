@@ -13,15 +13,18 @@
 
   <div class="field text-center">
     <%= form.label :title %>
+    </br>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field text-center ">
+  <div class="field text-center">
     <%= form.label :description %>
+    </br>
     <%= form.text_area :description %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions text-center">
+    <button type="submit" name="your_name" value="your_value" class="btn btn-primary text-white">Create</button>
   </div>
+  
 <% end %>

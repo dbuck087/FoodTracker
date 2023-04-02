@@ -1,6 +1,15 @@
-<h1>Editing Project</h1>
+<p id="notice"><%= notice %></p>
 
-<%= render 'form', project: @project %>
+<div class="container-fluid bg-primary text-white p-3 text-center">
+  <h1>Edit Item</h1>
+</div>
 
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+
+<div class="container-fluid bg-secondary p-3 text-center">
+    <%= render 'form', project: @project %>
+
+    <!--<a href="/project/:id" class="link-primary">Show</a>-->
+    <%= link_to 'Show', @project %> |
+    <a href="/" class="link-primary">Back</a>
+</div>
+
