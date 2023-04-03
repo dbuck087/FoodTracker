@@ -1,11 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$theme-colors: (
+  "custom-color": #0032d6 
+);
 
 * html{
   font-family: Arial, Helvetica, sans-serif;
-  background-color:#b3c7f7;
+  background-color: #0032D6;
 }
 html{
-  background-color: #b3c7f7;
+  background-color: #0032D6;
 }
 
 
