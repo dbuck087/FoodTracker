@@ -27,7 +27,7 @@
           <td><%= project.date %></td>
           <td><a class="btn btn-light text-primary" href=<%= project_path(project) %> role="button">Show</a></td>
           <td><a class="btn btn-light text-primary" href=<%= edit_project_path(project) %> role="button">Edit</a></td>
-          <td><a class="btn btn-light text-primary" href=<%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td></a>
+          <td><a class="btn btn-light text-primary" <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a></td>
         </tr>
       <% end %>
     </tbody>
