@@ -23,8 +23,20 @@
     <%= form.text_area :description %>
   </div>
 
+  <div class="field text-center">
+    <%= form.label :quantity %>
+    </br>
+    <%= form.text_field :quantity %>
+  </div>
+
+  <div class="field text-center">
+    <%= form.label :date %>
+    </br>
+    <%= form.text_field :date %>
+  </div>
+
   <div class="actions text-center">
-    <button type="submit" name="your_name" value="your_value" class="btn btn-primary text-white">Create</button>
+    <button type="submit" name="your_name" value="your_value" class="btn btn-primary text-white">Submit</button>
   </div>
   
 <% end %>

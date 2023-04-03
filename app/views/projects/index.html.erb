@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container-fluid bg-primary text-center text-white p-3">
+<div class="container-fluid bg-primary text-white text-center p-3">
   <h1>Food Tracker</h1>
 </div>
 
-<div class="container-fluid bg-secondary p-3">
+<div class="container-fluid p-3">
 
   <table class="center">
 
@@ -25,8 +25,8 @@
           <td><%= project.description %></td>
           <td><%= project.quantity %></td>
           <td><%= project.date %></td>
-          <td><%= link_to 'Show', project %></td>
-          <td><%= link_to 'Edit', edit_project_path(project) %></td>
+          <td><a class="btn btn-light text-primary" href=<%= project_path(project) %> role="button">Show</a></td>
+          <td><a class="btn btn-light text-primary" href=<%= edit_project_path(project) %> role="button">Edit</a></td>
           <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
@@ -34,7 +34,7 @@
   </table>
 </div>
 
-<div class="container-fluid bg-secondary text-center p-1"> 
+<div class="container-fluid text-center p-1"> 
   <a class="btn btn-primary text-white" href="projects/new" role="button">New Item</a>
 </div>
 

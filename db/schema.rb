@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2023_04_02_203146) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "quantity"
-    t.date "date"
+    t.text "date"
   end
 
 end
