@@ -1,11 +1,10 @@
 FactoryBot.define do
-  sequence :email do |n|
-    "email#{n}@factory.com"
-  end
   factory :user do
     id {1}
-    email
-    password {"qwerty"}
+    email { Faker::Internet.free_email }
+    password = Faker::Internet.password(min_length: 6)
+    password { password }
+    password_confirmation { password }
     # Add additional fields as required via your User model
   end
   
