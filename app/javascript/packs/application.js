@@ -8,7 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
-import "FoodTracker/app/javascript/stylesheets/application.scss"
+import "/app/javascript/stylesheets/application.scss"
 
 Rails.start()
 Turbolinks.start()
