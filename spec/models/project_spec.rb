@@ -38,8 +38,8 @@ describe "Project Attribute Requirements on Edit", :type => :model do
       expect(@project.title == "New Title")
     end
     it "ensures the desciption is present when editing project" do
-        @project.update(:desciption => "New Description")
-        expect(@project.desciption == "New Description")
+        @project.update(:description => "New Description")
+        expect(@project.description == "New Description")
       end
   end
 end
