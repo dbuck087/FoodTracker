@@ -23,8 +23,7 @@
               <td>
               <a class="btn btn-light text-primary" href=<%= project_path(project) %> role="button">Show</a>
               <a class="btn btn-light text-primary" href=<%= edit_project_path(project) %> role="button">Edit</a>
-              <a class="btn btn-light text-primary" <%= button_to 'Delete', project, method: :delete, data {are you sure?} %></a>
-              
+              <a class="btn text-primary" ><%= button_to 'Delete', project_path(project), method: :delete %></a>
               </td>
             <% end %>
           </tr>
