@@ -1,42 +1,41 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container-sm w-25 p-3 bg-primary text-white text-center">
+<div class="container-sm w-auto p-3 bg-primary text-white text-center">
   <h1>Food Tracker</h1>
-</div>
-
-<div class="container-sm w-25 p-3 text-center bg-primary">
-  <table class="table-responsive w-25 bg-primary ">
-    <thead>
-      <div class="row-auto">
-      
-        <th scope="col">Item Name</th>
-        <th scope="col">Description</th>
-        <th scope="col">Quantity</th>
-        <th scope="col">Date</th>  
-      
-      </div>
-    </thead>
-    <tbody>
-      <% @projects.each do |project| %>
-        <tr>
-          <td scope="col"><%= project.title %></td>
-          <td scope="col"><%= project.description %></td>
-          <td scope="col"><%= project.quantity %></td>
-          <td scope="col"><%= project.date %></td>
-          <% if user_signed_in? %>
-            <td scope="col"><a class="btn btn-light text-primary" href=<%= project_path(project) %> role="button">Show</a>
-            <a class="btn btn-light text-primary" href=<%= edit_project_path(project) %> role="button">Edit</a>
-            <a class="btn btn-light text-primary" <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></a></td>
-          <% end %>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
-
-
-<% if user_signed_in? %>
-  <div class="container-fluid text-center p-1"> 
-    <a class="btn btn-primary text-white" href="projects/new" role="button">New Item</a>
+  <div class="container-sm p-3 text-center bg-primary">
+    <table class="table table-striped">
+      <thead>
+        <div class="row">
+          <th scope="col">Item Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Date</th>  
+        </div>
+      </thead>
+      <tbody>
+        <% @projects.each do |project| %>
+          <tr>
+            <td scope="col"><%= project.title %></td>
+            <td scope="col"><%= project.description %></td>
+            <td scope="col"><%= project.quantity %></td>
+            <td scope="col"><%= project.date %></td>
+            <% if user_signed_in? %>
+              <td>
+              <a class="btn btn-light text-primary" href=<%= project_path(project) %> role="button">Show</a>
+              <a class="btn btn-light text-primary" href=<%= edit_project_path(project) %> role="button">Edit</a>
+              <a class="btn btn-light text-primary" <%= button_to 'Delete', project, method: :delete, data {are you sure?} %></a>
+              
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
   </div>
-<% end %>
+
+  <% if user_signed_in? %>
+    <div class="container-fluid text-center p-1"> 
+      <a class="btn btn-light text-primary" href="projects/new" role="button">New Item</a>
+    </div>
+  <% end %>
+</div>
